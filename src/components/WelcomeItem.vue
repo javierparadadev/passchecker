@@ -7,12 +7,20 @@
       <h3>
         <slot name="heading"></slot>
       </h3>
+
       <slot></slot>
+
+      <progress class="progress is-success is-small" value="60" max="100"/>
     </div>
+    
   </div>
 </template>
 
 <style scoped>
+progress {
+  margin-top: 1rem;
+}
+
 .item {
   margin-top: 2rem;
   display: flex;
