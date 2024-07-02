@@ -1,6 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import TheTitle from './components/TheTitle.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import ThePassword from './components/ThePassword.vue'
 </script>
 
 <template>
@@ -8,11 +9,12 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld/>
+      <TheTitle/>
     </div>
   </header>
 
   <main>
+    <ThePassword/>
     <TheWelcome />
   </main>
 </template>
