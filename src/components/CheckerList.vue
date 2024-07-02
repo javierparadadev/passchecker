@@ -12,8 +12,7 @@ import ToolingIcon from './icons/IconTooling.vue'
     </template>
     <template #heading>LibreLynx</template>
 
-    LibreLynx’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">password strength algorithm</a>.
+    <a href="https://www.librelynx.com/" target="_blank" rel="noopener">LibreLynx</a>’s password strength algorithm.
 
   </PassCheckerItem>
 
