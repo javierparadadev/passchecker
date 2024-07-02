@@ -1,15 +1,15 @@
 <script setup>
 import PassCheckerItem from './PassCheckerItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
+import CatIcon from './icons/IconCat.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 </script>
 
 <template>
   <PassCheckerItem>
     <template #icon>
-      <DocumentationIcon />
+      <CatIcon />
     </template>
-    <template #heading>LibreLynx Algorithm</template>
+    <template #heading>LibreLynx</template>
 
     LibreLynx’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">password strength algorithm</a>.
