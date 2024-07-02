@@ -15,7 +15,7 @@ import ThePassword from './components/ThePassword.vue'
 
   <main>
     <ThePassword/>
-    <TheWelcome />
+    <TheWelcome/>
   </main>
 </template>
 
