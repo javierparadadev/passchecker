@@ -1,6 +1,6 @@
 <script setup>
 import TheTitle from './components/TheTitle.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import CheckerList from './components/CheckerList.vue'
 import ThePassword from './components/ThePassword.vue'
 </script>
 
@@ -15,7 +15,7 @@ import ThePassword from './components/ThePassword.vue'
 
   <main>
     <ThePassword/>
-    <TheWelcome/>
+    <CheckerList/>
   </main>
 </template>
 

@@ -1,14 +1,11 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
+import PassCheckerItem from './PassCheckerItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-  <WelcomeItem>
+  <PassCheckerItem>
     <template #icon>
       <DocumentationIcon />
     </template>
@@ -17,9 +14,9 @@ import SupportIcon from './icons/IconSupport.vue'
     Ibelynx’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">password strength algorithm</a>.
 
-  </WelcomeItem>
+  </PassCheckerItem>
 
-  <WelcomeItem>
+  <PassCheckerItem>
     <template #icon>
       <ToolingIcon />
     </template>
@@ -39,6 +36,6 @@ import SupportIcon from './icons/IconSupport.vue'
     <br />
 
     More instructions are available in <code>README.md</code>.
-  </WelcomeItem>
+  </PassCheckerItem>
 
 </template>
