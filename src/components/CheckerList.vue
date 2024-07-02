@@ -29,4 +29,82 @@ import ToolingIcon from './icons/IconTooling.vue'
 
   </PassCheckerItem>
 
+  <PassCheckerItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>zxcvbn</template>
+
+    Algorithm, developed by <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Dropbox</a>, 
+    assesses password strength by estimating the number of attempts 
+    needed for an attacker to guess it. It evaluates against common passwords, keyboard patterns, demographic data, 
+    and accounts for both offline and online attack scenarios.
+
+  </PassCheckerItem>
+
+  <PassCheckerItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>zxcvbn</template>
+
+    Algorithm, developed by <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Dropbox</a>, 
+    assesses password strength by estimating the number of attempts 
+    needed for an attacker to guess it. It evaluates against common passwords, keyboard patterns, demographic data, 
+    and accounts for both offline and online attack scenarios.
+
+  </PassCheckerItem>
+
+  <PassCheckerItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>zxcvbn</template>
+
+    Algorithm, developed by <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Dropbox</a>, 
+    assesses password strength by estimating the number of attempts 
+    needed for an attacker to guess it. It evaluates against common passwords, keyboard patterns, demographic data, 
+    and accounts for both offline and online attack scenarios.
+
+  </PassCheckerItem>
+
+  <PassCheckerItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>zxcvbn</template>
+
+    Algorithm, developed by <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Dropbox</a>, 
+    assesses password strength by estimating the number of attempts 
+    needed for an attacker to guess it. It evaluates against common passwords, keyboard patterns, demographic data, 
+    and accounts for both offline and online attack scenarios.
+
+  </PassCheckerItem>
+
+  <PassCheckerItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>zxcvbn</template>
+
+    Algorithm, developed by <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Dropbox</a>, 
+    assesses password strength by estimating the number of attempts 
+    needed for an attacker to guess it. It evaluates against common passwords, keyboard patterns, demographic data, 
+    and accounts for both offline and online attack scenarios.
+
+  </PassCheckerItem>
+
+  <PassCheckerItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>zxcvbn</template>
+
+    Algorithm, developed by <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Dropbox</a>, 
+    assesses password strength by estimating the number of attempts 
+    needed for an attacker to guess it. It evaluates against common passwords, keyboard patterns, demographic data, 
+    and accounts for both offline and online attack scenarios.
+
+  </PassCheckerItem>
+
 </template>

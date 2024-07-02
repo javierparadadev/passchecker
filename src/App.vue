@@ -5,13 +5,14 @@ import ThePassword from './components/ThePassword.vue'
 </script>
 
 <template>
+  <div class="page-container">
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
       <TheTitle/>
     </div>
   </header>
+</div>
 
   <main>
     <ThePassword/>
@@ -20,6 +21,16 @@ import ThePassword from './components/ThePassword.vue'
 </template>
 
 <style scoped>
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto hace que el contenedor tenga el tamaño de la ventana visible */
+  padding: 0;
+  margin: 0;
+}
+
 header {
   line-height: 1.5;
 }
