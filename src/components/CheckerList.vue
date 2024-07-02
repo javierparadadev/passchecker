@@ -9,9 +9,9 @@ import ToolingIcon from './icons/IconTooling.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Ibelynx Algorithm</template>
+    <template #heading>LibreLynx Algorithm</template>
 
-    Ibelynx’s
+    LibreLynx’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">password strength algorithm</a>.
 
   </PassCheckerItem>
