@@ -1,21 +1,25 @@
 <template>
-    <input
-      class="input is-primary"
-      type="text"
-      placeholder="Write your password here..."
-    />
+  <input
+    class="input is-primary"
+    type="text"
+    placeholder="Write your password here..."
+    :value="password"
+    @input="updateValue"
+  />
 </template>
   
-  <script>
-  export default {
-    name: 'ThePassword',
-    data() {
-      return {
-        inputValue: ''
-      };
+<script>
+export default {
+  name: 'ThePassword',
+  props: ['password'],
+  methods: {
+    updateValue(event) {
+      this.$emit('password-change', event.target.value);
     }
   }
-  </script>
+}
+</script>
+
   
 <style scoped>
   input {

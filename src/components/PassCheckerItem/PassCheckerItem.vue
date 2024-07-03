@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, watchEffect, onMounted } from 'vue';
+  import { ref, watchEffect, watch } from 'vue';
 
   const props = defineProps({
     functionKey: String,
@@ -18,9 +18,9 @@
     currentFunction.value = functionsDict[props.functionKey] || (() => console.log('Función no definida'));
   });
 
-  onMounted(() => {
-    functionResult.value = currentFunction.value(props.password);
-  });
+  watch(() => props.password, (newPassword) => {
+    functionResult.value = currentFunction.value(newPassword);
+  }, { immediate: true });
 
 </script>
 

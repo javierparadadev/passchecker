@@ -6,19 +6,39 @@ import ThePassword from './components/ThePassword.vue'
 
 <template>
   <div class="page-container">
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-    <div class="wrapper">
-      <TheTitle/>
-    </div>
-  </header>
-</div>
+    <header>
+      <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+      <div class="wrapper">
+        <TheTitle/>
+      </div>
+    </header>
+  </div>
 
   <main>
-    <ThePassword/>
-    <CheckerList password="sample-password"/>
+    <ThePassword @password-change="handlePasswordChange" />
+    <CheckerList :password="password"/>
   </main>
 </template>
+
+<script>
+export default {
+  components: {
+    ThePassword,
+    CheckerList,
+    TheTitle
+  },
+  data() {
+    return {
+      password: ''
+    };
+  },
+  methods: {
+    handlePasswordChange(newValue) {
+      this.password = newValue;
+    }
+  }
+}
+</script>
 
 <style scoped>
 
