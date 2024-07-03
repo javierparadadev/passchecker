@@ -7,8 +7,8 @@
   });
 
   const functionsDict = {
-    librelynx: pwd => 70,
-    zxcvbn: pwd => 98,
+    librelynx: pwd => 70-pwd.length,
+    zxcvbn: pwd => 98-pwd.length,
   };
 
   const currentFunction = ref(() => {});
