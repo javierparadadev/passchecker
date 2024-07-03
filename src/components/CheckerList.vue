@@ -11,7 +11,7 @@ const props = defineProps({
 
 <template>
   
-  <PassCheckerItem
+  <!--<PassCheckerItem
     functionKey="librelynx"
     :password="password"
   >
@@ -21,8 +21,7 @@ const props = defineProps({
     <template #heading>LibreLynx</template>
 
     <a href="https://www.librelynx.com/" target="_blank" rel="noopener">LibreLynx</a>’s password strength algorithm.
-
-  </PassCheckerItem>
+  </PassCheckerItem>-->
 
   <PassCheckerItem
     functionKey="zxcvbn"
