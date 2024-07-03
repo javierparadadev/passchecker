@@ -1,5 +1,5 @@
 <script setup>
-import PassCheckerItem from './PassCheckerItem.vue'
+import PassCheckerItem from './PassCheckerItem/PassCheckerItem.vue'
 import CatIcon from './icons/IconCat.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 </script>
