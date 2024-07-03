@@ -16,7 +16,7 @@ import ThePassword from './components/ThePassword.vue'
 
   <main>
     <ThePassword/>
-    <CheckerList/>
+    <CheckerList password="sample-password"/>
   </main>
 </template>
 
@@ -26,7 +26,7 @@ import ThePassword from './components/ThePassword.vue'
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Esto hace que el contenedor tenga el tamaño de la ventana visible */
+  height: 100vh;
   padding: 0;
   margin: 0;
 }

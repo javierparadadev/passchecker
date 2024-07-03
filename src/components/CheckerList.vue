@@ -2,13 +2,18 @@
 import PassCheckerItem from './PassCheckerItem/PassCheckerItem.vue'
 import CatIcon from './icons/IconCat.vue'
 import ToolingIcon from './icons/IconTooling.vue'
+
+const props = defineProps({
+  password: String,
+});
+
 </script>
 
 <template>
   
   <PassCheckerItem
     functionKey="librelynx"
-    password="userPassword"
+    :password="password"
   >
     <template #icon>
       <CatIcon />
@@ -21,7 +26,7 @@ import ToolingIcon from './icons/IconTooling.vue'
 
   <PassCheckerItem
     functionKey="zxcvbn"
-    password="userPassword"
+    :password="password"
   >
     <template #icon>
       <ToolingIcon />
