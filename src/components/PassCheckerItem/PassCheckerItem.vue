@@ -2,22 +2,24 @@
   import { ref, watchEffect, onMounted } from 'vue';
 
   const props = defineProps({
-    functionKey: String
+    functionKey: String,
+    password: String,
   });
 
   const functionsDict = {
-    librelynx: pwd => 100,
-    zxcvbn: pwd => 100,
+    librelynx: pwd => 70,
+    zxcvbn: pwd => 98,
   };
 
   const currentFunction = ref(() => {});
+  const functionResult = ref(0);
 
   watchEffect(() => {
     currentFunction.value = functionsDict[props.functionKey] || (() => console.log('Función no definida'));
   });
 
   onMounted(() => {
-    currentFunction.value();
+    functionResult.value = currentFunction.value(props.password);
   });
 
 </script>
@@ -34,7 +36,7 @@
 
       <slot></slot>
 
-      <progress class="progress is-success is-small" value="60" max="100"/>
+      <progress class="progress is-success is-small" :value="functionResult" max="100"/>
     </div>
     
   </div>

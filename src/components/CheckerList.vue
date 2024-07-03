@@ -6,7 +6,10 @@ import ToolingIcon from './icons/IconTooling.vue'
 
 <template>
   
-  <PassCheckerItem>
+  <PassCheckerItem
+    functionKey="librelynx"
+    password="userPassword"
+  >
     <template #icon>
       <CatIcon />
     </template>
@@ -16,7 +19,10 @@ import ToolingIcon from './icons/IconTooling.vue'
 
   </PassCheckerItem>
 
-  <PassCheckerItem>
+  <PassCheckerItem
+    functionKey="zxcvbn"
+    password="userPassword"
+  >
     <template #icon>
       <ToolingIcon />
     </template>
