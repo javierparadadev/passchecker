@@ -1,3 +1,27 @@
+<script setup>
+  import { ref, watchEffect, onMounted } from 'vue';
+
+  const props = defineProps({
+    functionKey: String
+  });
+
+  const functionsDict = {
+    librelynx: pwd => 100,
+    zxcvbn: pwd => 100,
+  };
+
+  const currentFunction = ref(() => {});
+
+  watchEffect(() => {
+    currentFunction.value = functionsDict[props.functionKey] || (() => console.log('Función no definida'));
+  });
+
+  onMounted(() => {
+    currentFunction.value();
+  });
+
+</script>
+
 <template>
   <div class="item">
     <i>
