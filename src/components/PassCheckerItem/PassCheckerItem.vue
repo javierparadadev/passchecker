@@ -1,5 +1,6 @@
 <script setup>
   import { ref, watchEffect, watch } from 'vue';
+  import zxcvbn from 'zxcvbn';
 
   const props = defineProps({
     functionKey: String,
@@ -7,8 +8,8 @@
   });
 
   const functionsDict = {
-    librelynx: pwd => 70-pwd.length,
-    zxcvbn: pwd => 98-pwd.length,
+    librelynx: pwd => pwd.length * 2,
+    zxcvbn: pwd => zxcvbn(pwd).score * 25,
   };
 
   const currentFunction = ref(() => {});
