@@ -1,0 +1,23 @@
+stages:
+  - test
+  - build
+
+variables:
+  RUST_BACKTRACE: "1"
+
+test:
+  stage: test
+  image: node:20.12
+  before_script:
+    - npm install
+  script:
+    - npm run lint
+
+build:
+  stage: build
+  image: node:20.12
+  before_script:
+    - npm install
+  script:
+    - npm run lint
+    - npm run build
