@@ -1,9 +1,8 @@
 <script setup>
 import PassCheckerItem from './PassCheckerItem/PassCheckerItem.vue'
-import CatIcon from './icons/IconCat.vue'
 import ToolingIcon from './icons/IconDropbox.vue'
 
-const props = defineProps({
+defineProps({
   password: String,
 });
 
